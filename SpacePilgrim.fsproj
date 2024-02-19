@@ -9,7 +9,7 @@
   <ItemGroup>
     <Compile Include="Types.fs" />
     <Compile Include="Constants.fs" />
-    <Compile Include="GameFunctions.fs" />
+    <Compile Include="Physics.fs" />
     <Compile Include="MainWindow.axaml.fs" />
     <Compile Include="App.axaml.fs" />
     <Compile Include="Program.fs" />

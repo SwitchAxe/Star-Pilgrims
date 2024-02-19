@@ -2,13 +2,13 @@ namespace Types
 
 [<Struct>]
 type Battery =
-    { current : int64
-      cap     : int64 }
+    { current : double
+      cap     : double }
 
 [<Struct>]
 type Energy =
-    { current : int64
-      needed  : int64 }
+    { current : double
+      needed  : double }
 
 [<Struct>]
 type Electricity =
@@ -17,8 +17,8 @@ type Electricity =
 
 [<Struct>]
 type Matter =
-    { current : int64
-      needed  : int64 }
+    { current : double
+      needed  : double }
 
 [<Struct>]
 type Humans =
@@ -37,7 +37,7 @@ type Day =
 
 [<Struct>]
 type Money =
-  { amount : int64
+  { amount   : double
     earnings : int64 }
 
 [<Struct>]
@@ -52,22 +52,22 @@ type State =
 
 [<Struct>]
 type Upkeep =
-  { energy : int64
-    matter : int64 }
+  { energy : double
+    matter : double }
 
 [<Struct>]
 type Provides =
-  { energy  : int64
-    battery : int64
-    matter  : int64
+  { energy  : double
+    battery : double
+    matter  : double
     credits : int64
     space   : int64
     drones  : int64 }
 
 [<Struct>]
 type Cost =
-  { matter  : int64
-    energy  : int64
+  { matter  : double
+    energy  : double
     upkeep  : Upkeep
     time    : int64
     credits : int64 }
@@ -76,3 +76,12 @@ type Cost =
 type Utility =
   { cost : Cost
     provides : Provides }
+
+[<Struct>]
+type Engine =
+  { elapsed        : int64
+    power_obtained : double
+    power_consumed : double
+    battery_cap    : double
+    matter         : double
+    matter_change  : double }
